@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ 
+<aside class="sidebar">
+    <div class="logo">
+        <div class="logo-icon">L</div>
+        <div>
+            <h2>LifeOS</h2>
+            <span>AI Workspace</span>
+        </div>
+    </div>
+
+    <nav>
+        <p class="menu-title">MAIN</p>
+
+        <button class="nav-btn active" data-page="dashboard">
+            <span>⌂</span> Dashboard
+        </button>
+
+        <button class="nav-btn" data-page="chat">
+            <span>✦</span> AI Chat
+        </button>
+
+        <p class="menu-title">TOOLS</p>
+
+        <button class="nav-btn" data-page="files">
+            <span>▣</span> PDF / Files
+        </button>
+
+        <button class="nav-btn" data-page="translator">
+            <span>文</span> Translator
+        </button>
+
+        <button class="nav-btn" data-page="calculator">
+            <span>＋</span> Calculator
+        </button>
+
+        <button class="nav-btn" data-page="data">
+            <span>▦</span> Data Analysis
+        </button>
+
+        <button class="nav-btn" data-page="vision">
+            <span>◉</span> AI Vision
+        </button>
+
+        <button class="nav-btn" data-page="yolo">
+            <span>◇</span> YOLO Detection
+        </button>
+
+        <button class="nav-btn" data-page="security">
+            <span>⌁</span> Security
+        </button>
+
+        <button class="nav-btn" data-page="planner">
+            <span>✓</span> Planner
+        </button>
+    </nav>
+
+    <div class="sidebar-bottom">
+        <div class="status">
+            <span class="online"></span>
+            System Online
+        </div>
+        <div class="version">LifeOS AI v1.0</div>
+    </div>
+</aside>
+
+
+<main class="main">
+
+    <header class="topbar">
+        <div>
+            <button class="mobile-menu" id="mobileMenu">☰</button>
+            <span class="breadcrumb">LifeOS AI / <b id="pageName">Dashboard</b></span>
+        </div>
+
+        <div class="top-actions">
+            <button class="icon-btn">🔔</button>
+            <div class="profile">
+                <div class="avatar">A</div>
+                <span>Admin</span>
+            </div>
+        </div>
+    </header>
+
+
+   
+    <section class="page active" id="dashboard">
+
+        <div class="hero">
+            <div>
+                <span class="badge">✦ AI WORKSPACE</span>
+                <h1>Welcome to <span>LifeOS AI</span></h1>
+                <p>All your intelligent tools in one powerful workspace.</p>
+            </div>
+
+            <button class="primary-btn" onclick="openPage('chat')">
+                Start AI Chat →
+            </button>
+        </div>
+
+
+        <div class="stats">
+
+            <div class="stat-card">
+                <div class="stat-icon purple">✦</div>
+                <div>
+                    <span>AI Requests</span>
+                    <h2>1,284</h2>
+                    <small>+18.4% this month</small>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon blue">▣</div>
+                <div>
+                    <span>Files Analyzed</span>
+                    <h2>126</h2>
+                    <small>12 this week</small>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon green">✓</div>
+                <div>
+                    <span>Tasks Completed</span>
+                    <h2>84</h2>
+                    <small>92% completion</small>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <div class="stat-icon orange">⚡</div>
+                <div>
+                    <span>AI Status</span>
+                    <h2>Online</h2>
+                    <small>All systems operational</small>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="dashboard-grid">
+
+            <div class="panel quick-tools">
+                <div class="panel-header">
+                    <div>
+                        <h3>Quick Tools</h3>
+                        <p>Launch your most used tools</p>
+                    </div>
+                </div>
+
+
+<div class="tools-grid">
+
+                    <button onclick="openPage('chat')">
+                        <strong>✦</strong>
+                        <span>AI Chat</span>
+                        <small>Ask anything</small>
+                    </button>
+
+                    <button onclick="openPage('files')">
+                        <strong>▣</strong>
+                        <span>PDF Analyzer</span>
+                        <small>Analyze documents</small>
+                    </button>
+
+                    <button onclick="openPage('translator')">
+                        <strong>文</strong>
+                        <span>Translator</span>
+                        <small>Translate text</small>
+                    </button>
+
+                    <button onclick="openPage('calculator')">
+                        <strong>＋</strong>
+                        <span>Calculator</span>
+                        <small>Calculate anything</small>
+                    </button>
+
+                    <button onclick="openPage('vision')">
+                        <strong>◉</strong>
+                        <span>AI Vision</span>
+                        <small>Analyze images</small>
+                    </button>
+
+                    <button onclick="openPage('security')">
+                        <strong>⌁</strong>
+                        <span>Security</span>
+                        <small>Check your system</small>
+                    </button>
+
+                </div>
+            </div>
+
+
+            <div class="panel activity">
+                <div class="panel-header">
+                    <div>
+                        <h3>Recent Activity</h3>
+                        <p>Your latest actions</p>
+                    </div>
+                </div>
+
+                <div class="activity-list">
+
+                    <div class="activity-item">
+                        <div class="activity-icon purple">✦</div>
+                        <div>
+                            <b>AI Chat session</b>
+                            <span>Just now</span>
+                        </div>
+                    </div>
+
+                    <div class="activity-item">
+                        <div class="activity-icon blue">▣</div>
+                        <div>
+                            <b>Document analyzed</b>
+                            <span>12 minutes ago</span>
+                        </div>
+                    </div>
+
+                    <div class="activity-item">
+                        <div class="activity-icon green">✓</div>
+                        <div>
+                            <b>Task completed</b>
+                            <span>1 hour ago</span>
+                        </div>
+                    </div>
+
+                    <div class="activity-item">
+                        <div class="activity-icon orange">◉</div>
+                        <div>
+                            <b>Image processed</b>
+                            <span>2 hours ago</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="page" id="chat">
+
+        <div class="page-title">
+            <div>
+                <h1>AI Chat</h1>
+                <p>Talk with your LifeOS AI assistant.</p>
+            </div>
+        </div>
+
+        <div class="chat-container">
+
+            <div class="chat-messages" id="chatMessages">
+
+                <div class="message ai">
+                    <div class="message-avatar">✦</div>
+                    <div class="message-content">
+                        <b>LifeOS AI</b>
+                        <p>Salom! Men LifeOS AI. Sizga qanday yordam beray?</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="chat-input">
+                <input
+                    id="chatInput"
+                    type="text"
+                    placeholder="AI ga xabar yozing..."
+                >
+                <button onclick="sendMessage()">Send ↑</button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="page" id="files">
+
+        <div class="page-title">
+            <div>
+                <h1>PDF / File Analyzer</h1>
+                <p>Fayllarni yuklang va AI orqali tahlil qiling.</p>
+            </div>
+        </div>
+
+        <div class="upload-box" id="dropZone">
+            <div class="upload-icon">▣</div>
+            <h2>Faylni shu yerga tashlang</h2>
+            <p>PDF, DOCX, XLSX, CSV yoki TXT</p>
+
+            <label class="primary-btn">
+                Fayl tanlash
+                <input type="file" id="fileInput" hidden>
+            </label>
+
+            <div id="fileResult"></div>
+        </div>
+
+    </section>
+
+
+    
+    <section class="page" id="translator">
+
+        <div class="page-title">
+            <div>
+                <h1>Translator</h1>
+                <p>Matnlarni turli tillarga tarjima qiling.</p>
+            </div>
+        </div>
+
+        <div class="translator">
+
+            <div class="language-box">
+                <label>From</label>
+                <select id="fromLang">
+                    <option>Uzbek</option>
+                    <option>English</option>
+                    <option>Russian</option>
+                    <option>Turkish</option>
+                </select>
+
+                <textarea id="translateInput" placeholder="Matn yozing..."></textarea>
+            </div>
+
+            <div class="translate-middle">
+                ⇄
+            </div>
+
+            <div class="language-box">
+                <label>To</label>
+                <select id="toLang">
+                    <option>English</option>
+                    <option>Uzbek</option>
+                    <option>Russian</option>
+                    <option>Turkish</option>
+                </select>
+
+                <textarea id="translateOutput" readonly placeholder="Tarjima shu yerda chiqadi..."></textarea>
+            </div>
+
+        </div>
+
+        <button class="primary-btn" onclick="translateText()">
+            Translate
+        </button>
+
+    </section>
+
+
+   
+    <section class="page" id="calculator">
+
+        <div class="page-title">
+            <div>
+                <h1>Calculator</h1>
+                <p>Tez va qulay hisoblash.</p>
+            </div>
+        </div>
+
+        <div class="calculator">
+
+            <input id="calcDisplay" readonly value="0">
+
+            <div class="calc-buttons">
+
+                <button onclick="clearCalc()">AC</button>
+                <button onclick="calcInput('/')">÷</button>
+                <button onclick="calcInput('*')">×</button>
+                <button onclick="calcInput('-')">−</button>
+
+                <button onclick="calcInput('7')">7</button>
+                <button onclick="calcInput('8')">8</button>
+                <button onclick="calcInput('9')">9</button>
+                <button onclick="calcInput('+')">+</button>
+
+                <button onclick="calcInput('4')">4</button>
+                <button onclick="calcInput('5')">5</button>
+                <button onclick="calcInput('6')">6</button>
+                <button onclick="calculate()">=</button>
+
+                <button onclick="calcInput('1')">1</button>
+                <button onclick="calcInput('2')">2</button>
+                <button onclick="calcInput('3')">3</button>
+                <button onclick="calcInput('0')">0</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+  
+    <section class="page" id="data">
+
+        <div class="page-title">
+            <div>
+                <h1>Data Analysis</h1>
+                <p>CSV yoki Excel ma'lumotlarini tahlil qilish.</p>
+            </div>
+        </div>
+
+        <div class="data-card">
+
+            <div class="upload-icon">▦</div>
+            <h2>CSV / Excel yuklang</h2>
+
+            <label class="primary-btn">
+                Dataset tanlash
+                <input type="file" hidden accept=".csv,.xlsx,.xls">
+            </label>
+
+            <div class="fake-chart">
+                <div style="height:35%"></div>
+                <div style="height:65%"></div>
+
+<div style="height:48%"></div>
+                <div style="height:80%"></div>
+                <div style="height:55%"></div>
+                <div style="height:90%"></div>
+                <div style="height:70%"></div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    
+    <section class="page" id="vision">
+
+        <div class="page-title">
+            <div>
+                <h1>AI Vision</h1>
+                <p>Rasmlarni AI yordamida tahlil qilish.</p>
+            </div>
+        </div>
+
+        <div class="vision-upload">
+
+            <div class="upload-icon">◉</div>
+
+            <h2>Rasm yuklang</h2>
+            <p>AI rasm ichidagi obyektlarni aniqlash uchun tayyor.</p>
+
+            <label class="primary-btn">
+                Rasm tanlash
+                <input type="file" id="imageInput" hidden accept="image/*">
+            </label>
+
+            <img id="previewImage" class="preview-image">
+
+        </div>
+
+    </section>
+
+
+    
+    <section class="page" id="yolo">
+
+        <div class="page-title">
+            <div>
+                <h1>YOLO Object Detection</h1>
+                <p>Computer vision orqali obyektlarni aniqlash.</p>
+            </div>
+        </div>
+
+        <div class="yolo-card">
+
+            <div class="yolo-icon">◇</div>
+
+            <h2>Object Detection</h2>
+
+            <p>
+                Bu interfeys keyinchalik Python backend
+                va YOLO modeliga ulanadi.
+            </p>
+
+            <div class="detection-status">
+                <span class="online"></span>
+                Detection Engine Ready
+            </div>
+
+            <button class="primary-btn" onclick="startDetection()">
+                Start Detection
+            </button>
+
+            <div id="detectionResult"></div>
+
+        </div>
+
+    </section>
+
+
+    <section class="page" id="security">
+
+        <div class="page-title">
+            <div>
+                <h1>Security Check</h1>
+                <p>Qonuniy xavfsizlik diagnostikasi.</p>
+            </div>
+        </div>
+
+        <div class="security-card">
+
+            <div class="shield">⌁</div>
+
+            <h2>System Security</h2>
+
+            <p>
+                Saytingiz va lokal tizimingiz uchun
+                xavfsizlik diagnostikasi.
+            </p>
+
+            <button class="primary-btn" onclick="securityScan()">
+                Run Security Check
+            </button>
+
+            <div id="securityResult"></div>
+
+        </div>
+
+    </section>
+
+
+    
+    <section class="page" id="planner">
+
+        <div class="page-title">
+            <div>
+                <h1>Planner</h1>
+                <p>Kunlik vazifalaringizni boshqaring.</p>
+            </div>
+        </div>
+
+        <div class="planner">
+
+            <div class="add-task">
+                <input id="taskInput" placeholder="Yangi vazifa...">
+                <button class="primary-btn" onclick="addTask()">Add Task</button>
+            </div>
+
+            <div id="taskList"></div>
+
+        </div>
+
+    </section>
+
+</main>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+
+</body>
+</html>
